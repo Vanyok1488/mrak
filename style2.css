@@ -1,0 +1,381 @@
+html{
+    background-color: rgb(133, 124, 124);
+}
+abbr{
+    text-decoration: none;
+}
+
+.wrapper{
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    padding: 0 auto;
+    margin: 0 auto;
+    background-image: url(header.jpg);
+    top: -10px;
+    left: -5px;
+    position: relative;
+    
+}
+.main-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.main-menu a{
+    position: relative;
+    top: 110px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+}
+.О-нас{
+    display: flex;
+    position: relative;
+    top: auto;
+    /* align-items: center; */
+    background-color: rgb(133, 124, 124);
+    width: 100%;
+    /* justify-content: flex-start; */
+}
+.О-нас h1{
+    padding: 10px;
+    position: relative;
+    bottom: 20px;
+}
+.О-нас a{
+    text-decoration: none;
+    color: wheat;
+    
+}
+.О-нас p{
+    padding: 10px;
+    position: relative;
+    top: 50%;
+    font-size: 19px;
+    
+}
+.aboutMusic{
+    background-color: rgb(133, 124, 124);
+    height: 570px;
+    width: 70%;
+     top: auto;
+    position: relative;
+    padding: 0;
+    font-size: 18px;
+}
+
+
+li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+aside{
+    position: relative;
+    top: auto;
+    height: 570px;
+    background-color: rgb(133, 124, 124);
+    width: 31%;
+    margin-left: 5px;
+}
+
+
+.mainn{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.otpuskay .titleMusic{
+    color: black;
+    position: relative;
+    bottom: 30px;
+}
+.otpuskay img{
+    position: relative;
+    /* right: 3%; */
+}
+.otpuskay audio{
+    width: 250px;
+}
+audio{
+    width: 250px;
+}
+.myFriends .titleMusic{
+    color: black;
+    position: relative;
+    bottom: 20px;
+}
+.myFriends img{
+    position: relative;
+    /* right: 2%; */
+}
+
+.yaIodinochestvo .titleMusic{
+    color: black;
+    position: relative;
+    bottom: 20px;
+}
+.yaIodinochestvo img{
+    position: relative;
+    /* right: 2%; */
+}
+
+.yaIodinochestvo audio{
+    position: relative;
+    /* right: 10px; */
+    width: 45%;
+}
+
+.mamaMneStrashno span{
+    color: black;
+    position: relative;
+    bottom: 20px;
+}
+.mamaMneStrashno img{
+    position: relative;
+
+}
+.mamaMneStrashno audio{
+    width: 45%;
+}
+.krasota span{
+    color: black;
+    position: relative;
+    bottom: 20px;
+}
+.krasota img{
+    /* right: 3%; */
+    position: relative;
+}
+
+.vidihay span{
+    color: black;
+    position: relative;
+    bottom: 20px;
+}
+
+.vidihay img{
+    position: relative;
+    /* right: 2%; */
+}
+
+.reload span{
+    color: black;
+    position: relative;
+    bottom: 20px;
+}
+.reload img{
+    position: relative;
+
+}
+.demoni span{
+    color: black;
+    position: relative;
+    bottom: 20px;
+}
+.demoni img{
+    position: relative;
+    /* right: 3%; */
+}
+.music h1{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    font-size: 26px;
+    color: black;
+}
+
+
+
+
+.social h1{
+    text-align: center;
+    color: #fff;
+}
+.social{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(133, 124, 124);
+    margin: auto;
+    
+    
+}
+.social-icon{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    background-color: rgb(245, 146, 146);
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 3px rgb(243, 19, 19);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+.social-icon i{
+    color: rgb(143, 24, 24);
+    font-size: 30px;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.social-icon::after{
+    content: "";
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    border-radius: 50%;
+    transition: all 1s ease;
+    transform: translate(0, 100px);
+}
+.social-icon.inst:after{
+    background: linear-gradient(red,blue, purple);
+}
+ .social-icon.vk::after{
+    background: linear-gradient(red,blue, purple);
+}
+.social-icon.twitter::after{
+    background: linear-gradient(red,blue, purple);
+}
+.social-icon.twitch::after{
+    background: linear-gradient(red,blue, purple);
+}
+.social-icon.tg::after{
+    background: linear-gradient(red,blue, purple);
+}
+
+.social-icon:hover::after{
+    transform: translateY(0);
+}
+.social-icon:hover i{
+    color: #fff;
+}
+
+footer{
+    position: relative;
+    top: 100%;
+    height: 80px;
+}
+
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.cards{
+    margin: 15px 0;
+    padding: 0 15px;
+    position: relative;
+    bottom: 30px;
+}
+
+.card{
+    position: relative;
+    display: flex;
+}
+
+.card:before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0,0.8);
+    content: "";
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.card:hover::before{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.title{
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(60, 110, 202);
+    font-size: 30px;
+    overflow: hidden;
+}
+.title span{
+    display: block;
+    transform: translateY(30px);
+    transition: transform 0.3s ease;
+}
+
+.card:hover .title span{
+    transform: translateY(0);
+}
+
+/* .container{
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'content sidebar'
+    'content fooder ';
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows:  150px 1fr;
+}
+.fooder{
+    grid-area: fooder;
+    width: 100%;
+}
+.item{
+    padding: 10px;
+}
+.header{
+    grid-area: header;
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: aqua;
+    align-self: start;
+    height: 715px;
+
+}
+.content{
+    grid-area: content;
+
+} */
+
+@media only screen and (max-width: 1080px){
+    .music{
+        width :0
+    }
+    .mainn{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .mainn li{
+        width: 700px;
+        top: 440px;
+        position: relative;
+    }
+    .mainn h1{
+        position: relative;
+        top: 440px;
+    }
+    .social{
+        top: 500px;
+    }
+    .mainn li audio{
+        width: 250px;
+    }
+}

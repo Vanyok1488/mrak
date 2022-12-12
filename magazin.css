@@ -1,0 +1,234 @@
+body{
+    position: relative;
+    font-size: 16px;
+    background-color: gray;
+    min-width: 320px;
+    overflow-x: hidden;
+    /* height: 700vh; */
+    line-height: 1.4;
+}
+
+.product{
+    padding: 50px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: inline-block;
+    zoom: 1; 
+    *display: inline;
+}
+
+.image img{
+    /* width: 350px;
+    height: 350px; */
+    border-radius: 10px;
+    object-fit: cover;
+    bottom: 0;
+}
+.image{
+    margin-bottom: 0;
+}
+.raiting{
+    list-style-type: none;
+    margin-bottom: 0;
+    padding-left: 0;
+   
+}
+
+.raiting li{
+    display: inline-block;
+    color: orange;
+}
+
+.info h3{
+    margin-bottom: -10px;
+    font-size: 21px;
+}
+
+.info-price{
+    display: flex;
+    flex-flow: row nowrap;
+        
+}
+.add-to-cart{
+    background-color: gray;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(2, 58, 14);
+    border-radius: 30%;
+    font-size: 20px;
+}
+.price{
+    padding: 12px;
+}
+.row{
+    display: inline-flex;
+}
+.add-to-cart:hover{
+    cursor: pointer;
+}
+
+.image img::before{
+    height: 450px;
+    width: 450px;
+    transition: all 0.7s ease-in-out;
+}
+
+.image img:hover{
+    transform: translateY(-30px);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.col-md-3{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+.wrapper{
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    padding: 0 auto;
+    margin: 0 auto;
+    background-image: url(header.jpg);
+    
+}
+.main-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.main-menu a{
+    position: relative;
+    top: 110px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+}
+
+.social h1{
+    text-align: center;
+    color: #fff;
+}
+.social{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(3, 3, 3);
+    margin: auto;
+
+    
+}
+.social-icon{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    background-color: rgb(245, 146, 146);
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 3px rgb(243, 19, 19);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+.social-icon i{
+    color: rgb(143, 24, 24);
+    font-size: 30px;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.social-icon::after{
+    content: "";
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    border-radius: 50%;
+    transition: all 1s ease;
+    transform: translate(0, 100px);
+}
+.social-icon.inst:after{
+    background: linear-gradient(red,blue, purple);
+}
+ .social-icon.vk::after{
+    background: linear-gradient(red,blue, purple);
+}
+.social-icon.twitter::after{
+    background: linear-gradient(red,blue, purple);
+}
+.social-icon.twitch::after{
+    background: linear-gradient(red,blue, purple);
+}
+.social-icon.tg::after{
+    background: linear-gradient(red,blue, purple);
+}
+
+.social-icon:hover::after{
+    transform: translateY(0);
+}
+.social-icon:hover i{
+    color: #fff;
+}
+footer{
+    position: relative;
+    top: 150px;
+}
+
+@media (max-width: 1080px){
+    body{
+        width: 1080px;
+        max-height: 500px;
+    }
+    .wrapper{
+        color: rgb(197, 23, 23);
+        text-align: center;
+        height: 150px;
+        padding: 0 auto;
+        margin: 0 auto;
+        width: 1080px;
+        background-image: url(head1080.jpg);
+        background-repeat: no-repeat;
+
+    }
+    .main-menu{
+        display: flex;
+        flex-direction: row;
+    }   
+    .main-menu a{
+        position: relative;
+        top: 50px;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        font-size: 15px;
+        margin-right: 150px;
+
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    
+    }
+}
